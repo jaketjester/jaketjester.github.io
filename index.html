@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jake Jester | Electrical Engineering at Georgia Tech</title>
+  <meta name="description" content="ePortfolio of Jake Jester, Electrical Engineering student at Georgia Tech focused on electronic devices and bioengineering.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Jake <span>Jester</span></a>
+    <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')">Menu</button>
+    <ul id="menu" onclick="this.classList.remove('open')">
+      <li><a href="#about">About</a></li>
+      <li><a href="#goals">Career Goals</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#life">Beyond Class</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- WELCOME -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">Welcome</p>
+      <h1>Jake Jester</h1>
+      <p class="tag">Electrical Engineering &middot; Georgia Tech &middot; Class of 2029</p>
+      <p>I'm a second-year Electrical Engineering student at Georgia Tech focusing on <strong>Electronic Devices</strong> and <strong>Bioengineering</strong>. I like engineering I can hold in my hands: wiring a circuit, programming a microcontroller, and watching something I designed actually work.</p>
+      <ul>
+        <li>Building embedded projects with Arduino and ESP32 in C++, and teaching myself PCB design</li>
+        <li>Service &amp; Philanthropy Chair for Theta Xi, raising money for Habitat for Humanity</li>
+        <li>Looking for a Spring or Summer 2027 electrical engineering co-op or internship</li>
+      </ul>
+      <div class="btns">
+        <a class="btn gold" href="Jake_Jester_Resume.pdf" download>Download Resume</a>
+        <a class="btn ghost" href="#projects">See My Projects</a>
+      </div>
+    </div>
+    <img src="images/headshot.jpg" alt="Portrait of Jake Jester in a navy suit and gold and navy striped tie">
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap two-col">
+    <div class="prose">
+      <p class="eyebrow">About Me</p>
+      <h2>Builder, teammate, and people person</h2>
+      <p>My path into engineering started in 2021, when I decided to build my own gaming PC. I researched every part, figured out what worked together and what didn't, and put the whole thing together myself. When it powered on, I was hooked. I've kept upgrading that machine ever since, and that same feeling of making hardware work is what pulled me toward electrical engineering.</p>
+      <p>I came to Georgia Tech in Computer Engineering, but I realized that the part I loved most was the physical side: circuits, components, and devices. So I switched to Electrical Engineering. Today I spend a lot of my free time at my desk with a breadboard, an ESP32, and a pile of jumper wires, learning how to read datasheets, use GPIO pins, and debug a circuit that doesn't do what I expected. I'm also teaching myself PCB design by studying boards a friend designed and had manufactured, with the goal of laying out and ordering my own.</p>
+      <p>Before Georgia Tech, I was a three-year varsity starter and letterman on the Dunwoody High School football team. Football taught me how to prepare, how to take coaching, and how to show up for the people next to me even when I'm tired. I bring that same work ethic to my classes. In high school I was also in the Finance Academy, a two-year business program in corporate finance, marketing, and entrepreneurship, which gave me a feel for how engineering decisions connect to cost and customers.</p>
+    </div>
+    <div class="prose">
+      <p>I've also learned a lot from running a small business. Since 2021 I've managed Jaxon's Tennis Racquet Stringing in Dunwoody while the owner is at West Point. I handle orders, track inventory, run a touchless drop-off and pick-up system, and keep the business website up to date. It taught me to be organized, communicate clearly with customers, and own the results when someone is counting on me.</p>
+      <p>At Georgia Tech I serve as Service &amp; Philanthropy Chair for Theta Xi, where I plan service events and fundraisers for Habitat for Humanity. I also work as a Roll Call Caller for the Georgia Tech Alumni Association, calling alumni to support the Institute's annual fund. Between those roles, I've gotten comfortable talking with almost anyone, and I've learned that the best conversations start with genuinely listening.</p>
+      <p>What drives me most is using engineering to help people. Medicine is one of the most direct ways to do that, which is why I chose Bioengineering as one of my threads. I want to design devices that make a real difference in people's health and quality of life.</p>
+      <figure class="photo" style="margin-top:1.4rem">
+        <img src="images/tinkercad-rgb-circuit.jpg" alt="Tinkercad schematic of an Arduino Uno controlling an RGB LED with three potentiometers on a breadboard">
+        <figcaption style="padding:0 14px 12px">A Tinkercad circuit I built while learning Arduino: three potentiometers mix the red, green, and blue channels of an RGB LED.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER GOALS -->
+<section id="goals" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Career Goals</p>
+    <h2>Where I'm headed and how I'll get there</h2>
+    <p class="lede">My long-term goal is to work as an electrical engineer designing medical devices, the hardware inside instruments that monitor, diagnose, and treat patients. Here is my plan for getting from a second-year student to that role.</p>
+
+    <div class="goals">
+      <div class="goal">
+        <div class="num">01</div>
+        <h3>Get real industry experience</h3>
+        <p>My next step is a paid electrical engineering co-op or internship for Spring or Summer 2027. I'm especially interested in medical technology, and I'm applying to co-op roles in that space now. I want to see how engineers take a design from idea to product, and to learn the parts of the job a classroom can't teach.</p>
+      </div>
+      <div class="goal">
+        <div class="num">02</div>
+        <h3>Go deep in devices and biomedical engineering</h3>
+        <p>My two threads are Electronic Devices and Bioengineering. Courses like Semiconductor Devices, IC Fabrication, Optical Engineering, Biomedical Instrumentation, and Biosystems Analysis will give me the foundation to understand how a device works from the material level up to the full system. I'd also like to join an undergraduate research group or a VIP team.</p>
+      </div>
+      <div class="goal">
+        <div class="num">03</div>
+        <h3>Design devices that help people</h3>
+        <p>After I graduate in May 2029, I want to join a medtech or healthcare company as a hardware or device engineer. Ten years from now, I hope to be leading the design of a product that patients and doctors rely on every day, and mentoring younger engineers the way others are mentoring me now.</p>
+      </div>
+    </div>
+
+    <h3 style="margin-top:44px">My ECE Roadmap</h3>
+    <p class="lede">From my ECE 1100 degree plan. I'm on track for a B.S. in Electrical Engineering with 131 credit hours.</p>
+    <div class="roadmap">
+      <div class="term">
+        <span class="when">2025 &ndash; 2026</span>
+        <h3>Year 1: Foundations</h3>
+        <ul>
+          <li>Physics I &amp; II, Linear Algebra</li>
+          <li>Intro to Computing (Python)</li>
+          <li>Circuit Analysis &amp; Differential Equations (Summer)</li>
+        </ul>
+      </div>
+      <div class="term now">
+        <span class="when">2026 &ndash; 2027 &middot; Now</span>
+        <h3>Year 2: ECE Core</h3>
+        <ul>
+          <li>Digital System Design, ECE Discovery Practicum</li>
+          <li>Multivariable Calculus</li>
+          <li>Signal Processing, Digital Design Lab, Engineering Software Design</li>
+          <li>Target: 2027 co-op or internship</li>
+        </ul>
+      </div>
+      <div class="term">
+        <span class="when">2027 &ndash; 2028</span>
+        <h3>Year 3: Threads Begin</h3>
+        <ul>
+          <li>Microelectronics, Electromagnetics, Circuits &amp; Electronics Lab</li>
+          <li>Semiconductor Devices, IC Fabrication</li>
+          <li>Biomedical Instrumentation, Signals &amp; Systems</li>
+        </ul>
+      </div>
+      <div class="term">
+        <span class="when">2028 &ndash; 2029</span>
+        <h3>Year 4: Capstone</h3>
+        <ul>
+          <li>Interdisciplinary Capstone Design</li>
+          <li>Optical Engineering, Biosystems Analysis</li>
+          <li>Electric Energy Systems</li>
+          <li>Graduate May 2029</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow">Technical Projects</p>
+    <h2>Things I've built</h2>
+    <p class="lede">My portfolio of hands-on work. I'll keep adding to it throughout my time at Georgia Tech.</p>
+    <div class="grid">
+      <article class="card">
+        <img src="images/wii-remote.jpg" alt="White Wii Remote and Nunchuk controller" style="object-fit:contain;background:#fff;padding:12px">
+        <div class="body">
+          <div><span class="pill">Discovery Project</span><span class="pill live">In Progress</span></div>
+          <h3>Homemade Wii Remote</h3>
+          <p class="meta">ECE 1100 &middot; Fall 2026 &middot; Arduino, ESP32, C++</p>
+          <p>My Individual Discovery Project: designing and building my own Wii Remote, from the electronics to the physical controller, that connects to a PC and works with the Dolphin emulator.</p>
+          <a class="more" href="wii-remote.html">Read the project feature &rarr;</a>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/esp32-and-pcb.jpg" alt="An ESP32 breadboard prototype with buttons and a small display next to a green printed circuit board in its shipping bag">
+        <div class="body">
+          <div><span class="pill">Embedded</span><span class="pill">PCB Design</span></div>
+          <h3>ESP32 Prototyping &amp; PCB Self-Study</h3>
+          <p class="meta">2026 &ndash; Present &middot; ESP32, C++, breadboarding</p>
+          <p>On the right, a breadboard where I practice programming an ESP32 and working with its pins, using push buttons, a small display, and a buzzer. On the left, a rover actuation board a friend designed and had manufactured, which I'm studying to learn how to design my own PCBs.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="body">
+          <div><span class="pill">Software</span><span class="pill">APIs</span></div>
+          <h3>Steam Library Analyzer &amp; Chatbot</h3>
+          <p class="meta">Spring 2026 &middot; Python, Streamlit, pandas, Gemini API</p>
+          <p>A multi-page Streamlit web app that pulls a user's profile and game library from the Steam Web API, charts their most-played games with pandas, and uses the Google Gemini API to power a chatbot that answers questions using live Steam data.</p>
+          <p>Along the way I learned to manage API keys securely and handle rate limits, private profiles, and invalid IDs without the app breaking.</p>
+        </div>
+      </article>
+      <article class="card">
+        <div class="body">
+          <div><span class="pill">Hardware</span></div>
+          <h3>Custom PC Design &amp; Build</h3>
+          <p class="meta">2021 &ndash; Present</p>
+          <p>I researched and specified every component, checked compatibility and power requirements, and assembled my own gaming PC. I've continued to upgrade it over time. This was the project that first got me interested in hardware.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="images/tinkercad-rgb-circuit.jpg" alt="Tinkercad Arduino circuit with RGB LED and potentiometers">
+        <div class="body">
+          <div><span class="pill">Arduino</span><span class="pill">Simulation</span></div>
+          <h3>Arduino &amp; Tinkercad Circuits</h3>
+          <p class="meta">2026 &middot; Arduino Uno, Tinkercad, Fusion 360</p>
+          <p>Before working with real hardware, I prototype circuits in Tinkercad, like this RGB LED color mixer controlled by three potentiometers through the Uno's analog inputs and PWM outputs. I'm also teaching myself Fusion 360 for mechanical CAD.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="alt">
+  <div class="wrap resume-box">
+    <a href="Jake_Jester_Resume.pdf" target="_blank" rel="noopener"><img src="images/resume-preview.jpg" alt="Preview of Jake Jester's one-page resume"></a>
+    <div>
+      <p class="eyebrow">Resume</p>
+      <h2>My one-page resume</h2>
+      <p class="lede">My ECE Career Fair resume, covering my education, projects, leadership, work experience, and skills. Click the preview to open it, or download a copy.</p>
+      <div class="btns">
+        <a class="btn navy" href="Jake_Jester_Resume.pdf" download>Download PDF</a>
+        <a class="btn outline" href="Jake_Jester_Resume.pdf" target="_blank" rel="noopener">Open in New Tab</a>
+      </div>
+      <p style="margin-top:1.6rem"><strong>Skills at a glance:</strong> C++ (Arduino, ESP32) &middot; Python (pandas, Streamlit) &middot; REST and LLM API integration &middot; Circuit analysis and wiring &middot; Digital logic design &middot; Tinkercad &middot; Fusion 360 (learning) &middot; Event planning and fundraising</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap two-col">
+    <div>
+      <p class="eyebrow">Experience &amp; Leadership</p>
+      <h2>Work and leadership</h2>
+      <div class="xp">
+        <div class="role">Service &amp; Philanthropy Chair, Theta Xi Fraternity</div>
+        <div class="where">Georgia Tech &middot; 2026 &ndash; Present</div>
+        <p>I plan service opportunities for the chapter, including sorority service mixers and nursing home visits, and run fundraisers for Habitat for Humanity, our national philanthropy. That includes our biggest event, the fifth annual Theta Xi Haunted House, which raised money for Habitat. I also write donor outreach letters and coordinate with partner organizations and campus groups.</p>
+      </div>
+      <div class="xp">
+        <div class="role">Roll Call Caller, Georgia Tech Alumni Association</div>
+        <div class="where">Atlanta, GA &middot; Fall 2026 &ndash; Present</div>
+        <p>I call alumni to raise support for Roll Call, Georgia Tech's unrestricted annual fund. The job is about building rapport fast, sharing what's happening on campus, and making a clear, professional ask.</p>
+      </div>
+      <div class="xp">
+        <div class="role">Manager, Jaxon's Tennis Racquet Stringing</div>
+        <div class="where">Dunwoody, GA &middot; 2021 &ndash; 2025</div>
+        <p>I managed orders, inventory, and a touchless customer drop-off and pick-up system while the owner attended West Point, and maintained the business website.</p>
+      </div>
+      <div class="xp">
+        <div class="role">Leadership Project, Campus Outreach</div>
+        <div class="where">Summer 2026</div>
+        <p>I was selected for a three-week leadership development program focused on team building and personal growth, and independently raised $1,650 in program support through personal outreach to donors.</p>
+      </div>
+      <div class="xp">
+        <div class="role">Other Activities</div>
+        <p>Beach Volleyball Club at Georgia Tech &middot; DUMC Youth Group College Leader &middot; Dunwoody High School Varsity Football, three-year starter and letterman &middot; Earlier work in window installation and landscaping</p>
+      </div>
+    </div>
+    <figure class="photo">
+      <img src="images/haunted-house-poster.jpg" alt="Poster for the Theta Xi Haunted House, October 29 to 31 at 777 Techwood Drive, in support of Habitat for Humanity">
+      <figcaption style="padding:0 14px 12px">The poster for this year's Theta Xi Haunted House, a three-night event with all profits going to Habitat for Humanity.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- HOBBIES -->
+<section id="life" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Interests &amp; Hobbies</p>
+    <h2>Beyond the classroom</h2>
+    <p class="lede">I have to stay active. Pushing myself physically is how I learn to push myself mentally, and that carries over into everything else I do, from a tough exam to a circuit that won't cooperate.</p>
+    <div class="hobbies">
+      <div class="hobby">
+        <div class="icon" aria-hidden="true">🏃</div>
+        <h3>Running</h3>
+        <p>On Halloween weekend I ran a full marathon in Washington, D.C. Training for it and crossing the finish line was one of the best experiences I've had, and it's exactly the kind of challenge I love chasing.</p>
+      </div>
+      <div class="hobby">
+        <div class="icon" aria-hidden="true">🏐</div>
+        <h3>Volleyball &amp; Climbing</h3>
+        <p>I play with Georgia Tech's Beach Volleyball Club and go rock climbing whenever I can. Both reward patience, technique, and staying calm under pressure.</p>
+      </div>
+      <div class="hobby">
+        <div class="icon" aria-hidden="true">🎸</div>
+        <h3>Music</h3>
+        <p>I play guitar and piano. Music is my creative outlet, and learning a hard song works a lot like learning engineering: break it into pieces, practice each one, then put it all together.</p>
+      </div>
+      <div class="hobby">
+        <div class="icon" aria-hidden="true">☕</div>
+        <h3>Coffee &amp; Conversation</h3>
+        <p>I'm a very social person, and one of my favorite things is exploring a new coffee shop with someone, getting to know them, and hearing the stories of their life.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow">Contact</p>
+    <h2>Let's connect</h2>
+    <p>I'm looking for a Spring or Summer 2027 co-op or internship in electrical engineering, especially in medical devices. If you're working on something interesting, or just want to grab coffee, I'd love to hear from you.</p>
+    <div class="btns" style="justify-content:center">
+      <a class="btn gold" href="mailto:jaketjester@gmail.com">jaketjester@gmail.com</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/jake-jester-b5b870322" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; 2026 Jake Jester &middot; Georgia Institute of Technology, School of Electrical and Computer Engineering</div>
+</footer>
+
+</body>
+</html>

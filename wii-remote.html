@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discovery Project: Homemade Wii Remote | Jake Jester</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="index.html">Jake <span>Jester</span></a>
+    <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('menu').classList.toggle('open')">Menu</button>
+    <ul id="menu">
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#goals">Career Goals</a></li>
+      <li><a href="index.html#projects">Projects</a></li>
+      <li><a href="index.html#resume">Resume</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="proj-hero">
+  <div class="wrap">
+    <p class="eyebrow">Discovery Project Feature &middot; ECE 1100 &middot; Fall 2026</p>
+    <h1>Building My Own Wii Remote</h1>
+    <p>Designing and building a working, homemade Wii Remote, from the circuit to the physical controller, that connects to a computer and plays games through the Dolphin emulator.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap article">
+    <div class="status"><strong>Project in progress.</strong> This feature will be updated with final results, photos, and a demo video before the Discovery Project Showcase.</div>
+
+    <h2>The Problem</h2>
+    <p>The Nintendo Wii Remote was one of the most creative controllers ever made. Packed inside a small plastic shell are buttons, motion sensing, wireless communication, a speaker, and a rumble motor, all running on batteries. When it came time to pick a Discovery Project, I wanted to answer a simple question: <em>could I build one myself?</em></p>
+    <p>The goal of this project is to design and build my own Wii Remote, including both the electronics and the physical controller, that can connect to my computer and work with Dolphin, the open-source Wii emulator. I chose to connect to a PC instead of a real Wii console so I could focus on the hardware and firmware rather than reverse-engineering Nintendo's proprietary pairing. Building it forces me to learn the skills I care about most as an electrical engineer: microcontroller programming, reading sensor data, wireless communication, circuit design, and turning a breadboard prototype into a real device someone can hold.</p>
+
+    <figure class="photo" style="margin:1.6rem 0">
+      <img src="images/wii-remote-pcb.jpg" alt="The circuit board inside an original Nintendo Wii Remote">
+      <figcaption style="padding:0 14px 12px">Inside an original Wii Remote: a single long board with the main chip, buttons, battery contacts, and rumble motor. (Reference image from the web, not my photo.)</figcaption>
+    </figure>
+
+    <h2>The Process</h2>
+    <p><strong>Step 1: Learn the basics on Arduino.</strong> I started with an Arduino Uno and my Elegoo starter kit, and practiced in Tinkercad before touching real hardware. I built small circuits to read buttons and potentiometers and drive LEDs with PWM, which taught me how inputs and outputs map onto a microcontroller's pins.</p>
+    <p><strong>Step 2: Move to the ESP32.</strong> The Uno doesn't have built-in wireless, so the real build uses an ESP32, which has Wi-Fi and Bluetooth on the chip. I've been prototyping on a breadboard with the ESP32, wiring up push buttons, a small display, and a buzzer to get comfortable with its pins and with programming it in C++.</p>
+    <p><strong>Step 3: Learn PCB design.</strong> A breadboard full of jumper wires won't fit in a controller, so I'm teaching myself PCB design by studying a board a friend designed and had manufactured. My goal is to lay out a custom board for the remote that fits inside a handheld shell.</p>
+    <p><strong>Next steps:</strong> add motion sensing, get the ESP32 talking to my computer wirelessly so Dolphin recognizes it as a controller, and design a 3D-printed housing in Fusion 360.</p>
+
+    <figure class="photo" style="margin:1.6rem 0">
+      <img src="images/esp32-and-pcb.jpg" alt="ESP32 breadboard prototype with push buttons and a display beside a manufactured green PCB">
+      <figcaption style="padding:0 14px 12px">My workbench: the ESP32 breadboard prototype I use to practice (right) and the PCB I'm studying to learn board design (left). Photo by me.</figcaption>
+    </figure>
+
+    <h2>The Outcome</h2>
+    <p>Coming soon. I'll share the finished remote, what worked, what didn't, and what I learned before the Discovery Project Showcase.</p>
+
+    <p style="margin-top:2.4rem"><a class="btn navy" href="index.html#projects">&larr; Back to all projects</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; 2026 Jake Jester &middot; Georgia Institute of Technology</div>
+</footer>
+</body>
+</html>
